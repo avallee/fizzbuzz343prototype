@@ -1,0 +1,7 @@
+<%= render :partial => 'user_bar' %>
+<h1>Users</h1>
+<ol>
+  <% @users.each do |user| %>
+    <li><span><%=h user.login %></span><br /><span><%= user.email %></span></li>
+  <% end %>
+</ol>
